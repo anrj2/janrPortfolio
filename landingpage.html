@@ -4,48 +4,195 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="page.css" />
 </head>
 <body>
-    <!-- Nav Bar -->
-    <nav class="navbar">
-    <div class="logo">[YourLogo]</div>
-    <button class="menu-btn" id="menuBtn" aria-label="Open menu">
-      <div class="dot"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
-    </button>
-  </nav>
+     <header>
+        <!-- Logo -->
+         <a href="#about" class="logo">
+            <img src="logo.png" alt="Logo">
+        </a>
 
-  <!-- Overlay Menu -->
-  <div class="overlay" id="overlay">
-    <ul class="menu-list">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#resume">Resume</a></li>
-      <li><a href="#blog">Blog & Research</a></li>
-      <li><a href="#connect">Connect</a></li>
-    </ul>
-  </div>
+        <!-- Navigation Links (Initially Hidden) -->
+        <nav class="nav-links" id="navLinks">
+            <a href="#projects">Portfolio</a>
+            <a href="#resume">Resume</a>
+            <a href="#blog">Research & Insights</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
+        <!-- Navigation/Menu -->
+        <div class="menu-icon" id="menuToggle">
+           <span class="bar bar1"></span>
+           <span class="bar bar2"></span>
+           <span class="bar bar3"></span>
+        </div>
 
-    <!-- Hero Section -->
+     </header>
+
+ <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h1>Hello There!</h1>
+            <h2 class="intro-line">
+                <span class="iam">I am</span>
+                <span class="name">Abby Joseph</span>
+            </h2>
+
+            <p class="roles">Data Scientist & Software Developer
+            </p>
+
+            <div class="cta-social">
+                <a class="btn" href="#projects">Explore My Work</a>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/abbynadiejoseph" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/anrj2" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:abbynadj@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+         
+        <div class="hero-visual">
+            <div class="hero-img">
+                    <!-- Animated circle container -->
+                    <div class="circle-background">
+                        <div class="circle ring ring-1"></div>
+                        <div class="circle ring ring-2"></div>
+                        <div class="circle ring ring-3"></div>
+                    </div>
+
+                    <!-- Your untouched image container -->
+                    <div class="circle-frame">
+                        <img src="abby.png" alt="Abby Joseph">
+                    </div>
+            </div>
+        </div>
+
+    </section>
+
 
     <!-- About Section -->
+    <section  id="about">
+        <div class="intro-box">
+            <p>
+                I am a data scientist who loves connecting numbers to meaning. With a background in Computer Science and a minor in Data Science, I thrive at the intersection of storytelling and statistics.
+            </p>
+            <p>
+                Whether it’s predictive modeling, data visualization, or wrangling messy datasets, I find joy in uncovering insights that drive smarter decisions. I’m particularly passionate about applying these skills in ways that prioritize ethics and inclusion—especially in AI and tech ecosystems. I’m also an advocate for increasing representation of Black women in STEM and ensuring our stories are not just told, but understood.
+            </p>
+        </div>
+    </section>
 
-    <!-- Skills -->
+    <!-- Skills Section -->
 
     <!-- Projects Section -->
-
+<section class="projects" id="projects">
+        <div class="project-card">
+            <div class="project-img"></div>
+            <h3>PROJECT NAME</h3>
+            <p>Skills</p>
+            <p class="arrow">&raquo;</p>
+        </div>
+        <div class="project-card">
+            <div class="project-img"></div>
+            <h3>PROJECT NAME</h3>
+            <p>Skills</p>
+            <p class="arrow">&raquo;</p>
+        </div>
+        <div class="project-card">
+            <div class="project-img"></div>
+            <h3>PROJECT NAME</h3>
+            <p>Skills</p>
+            <p class="arrow">&raquo;</p>
+        </div>
+        <div class="project-card">
+            <div class="project-img"></div>
+            <h3>PROJECT NAME</h3>
+            <p>Skills</p>
+            <p class="arrow">&raquo;</p>
+        </div>
+    </section>
     <!-- Resume Section -->
 
     <!-- Blog Section -->
 
+    <section class="blog-section" id="blog">
+        <div class="blog-layout">
+            <div class="blog-tile tall" style="grid-column: 1; grid-row: 1 / span 2;"></div>
+            <div class="blog-tile" style="grid-column: 2; grid-row: 1;"></div>
+            <div class="blog-tile" style="grid-column: 3; grid-row: 1;"></div>
+
+            <div class="blog-title">Research & Insights</div>
+
+            <div class="blog-tile" style="grid-column: 1; grid-row: 3;"></div>
+            <div class="blog-tile" style="grid-column: 2; grid-row: 3;"></div>
+            <div class="blog-tile tall" style="grid-column: 3; grid-row: 2 / span 2;"></div> 
+        </div>
+
+    </section>
+
+
     <!-- Connect Section -->
+    <section class="contact" id="contact">
+        <div class="contact-info">
+            <h2>Let’s Connect</h2>
+            <p>I’m always open to new opportunities, collaborations, or just a friendly chat. Whether you have a project in mind, a question, or want to connect over shared interests.</p>
+            <p>I’d love to hear from you!</p>
+
+            <div class="contact-methods">
+        <div class="method">
+            <i class="fab fa-linkedin"></i>
+            <div>
+                LinkedIn <br>
+            <small>Abby Nadie Joseph</small>
+            </div>
+        </div>
+        <div class="method">
+            <i class="fas fa-envelope"></i>
+            <div>
+            Email<br>
+            <small>abbynadj@gmail.com</small>
+            </div>
+            </div>
+            </div>
+        </div>
+
+
+         <form class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject" required>
+                <option value="">Select...</option>
+                <option value="collab">Collaboration</option>
+                <option value="question">Question</option>
+                <option value="chat">Just saying Hi</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="submit-btn">
+            <span class="icon-circle"><i class="fas fa-arrow-right"></i></span>
+            Get In Touch
+            </button>
+        </form>
+    </section>
+
+
+
     <script src="page.js"></script>
 </body>
 </html>
