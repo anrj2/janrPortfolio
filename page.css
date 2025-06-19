@@ -1,0 +1,97 @@
+/* Navigation Bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+  background: #fff;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Menu Button (Five-Dot Icon) */
+.menu-btn {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.menu-btn .dot {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #333;
+  transition: top 0.3s ease, left 0.3s ease, opacity 0.3s ease;
+}
+
+/* Initial (dice-face) positions */
+.menu-btn .dot:nth-child(1) { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.menu-btn .dot:nth-child(2) { top: 25%; left: 50%; transform: translate(-50%, -50%); }
+.menu-btn .dot:nth-child(3) { top: 50%; left: 25%; transform: translate(-50%, -50%); }
+.menu-btn .dot:nth-child(4) { top: 50%; left: 75%; transform: translate(-50%, -50%); }
+.menu-btn .dot:nth-child(5) { top: 75%; left: 50%; transform: translate(-50%, -50%); }
+
+/* Open state: line of dots */
+.menu-btn.open .dot:nth-child(1) { top: 50%; left: calc(50% - 30px); transform: translate(-50%, -50%); }
+.menu-btn.open .dot:nth-child(2) { top: 50%; left: calc(50% - 15px); transform: translate(-50%, -50%); }
+.menu-btn.open .dot:nth-child(3) { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.menu-btn.open .dot:nth-child(4) { top: 50%; left: calc(50% + 15px); transform: translate(-50%, -50%); }
+.menu-btn.open .dot:nth-child(5) { top: 50%; left: calc(50% + 30px); transform: translate(-50%, -50%); }
+
+/* Overlay Menu */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.overlay.active {
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.menu-list {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay.active .menu-list {
+  opacity: 1;
+}
+
+.menu-list li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #333;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.menu-list li a:hover {
+  color: #007BFF;
+}
