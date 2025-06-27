@@ -32,7 +32,7 @@
 
      </header>
 
- <!-- Hero Section -->
+ <!-- Hero Section 
     <section class="hero" id="home">
         <div class="hero-text">
             <h1>Hello There!</h1>
@@ -62,21 +62,70 @@
          
         <div class="hero-visual">
             <div class="hero-img">
-                    <!-- Animated circle container -->
+ 
                     <div class="circle-background">
                         <div class="circle ring ring-1"></div>
                         <div class="circle ring ring-2"></div>
                         <div class="circle ring ring-3"></div>
                     </div>
 
-                    <!-- Your untouched image container -->
+    
                     <div class="circle-frame">
                         <img src="abby.png" alt="Abby Joseph">
                     </div>
             </div>
         </div>
 
-    </section>
+    </section -->
+
+    <!-- Hero Section -->
+<section class="hero" id="home">
+  <!-- Social Media Sidebar -->
+  <div class="social-sidebar">
+    <a href="https://www.linkedin.com/in/abbynadiejoseph" target="_blank" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/anrj2" target="_blank" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="mailto:abbynadj@gmail.com" aria-label="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
+
+  <!-- Main Container -->
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1>Hello There!</h1>
+        <h2 class="intro-line">
+          <span class="iam">I am</span>
+          <span class="name">Abby Joseph</span>
+        </h2>
+        <p class="roles">Data Scientist & Software Developer</p>
+
+        <div class="cta-social">
+          <a class="btn" href="#projects">Explore My Work</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-img">
+          <div class="circle-background">
+            <div class="circle ring ring-1"></div>
+            <div class="circle ring ring-2"></div>
+            <div class="circle ring ring-3"></div>
+          </div>
+          <div class="circle-frame">
+            <img src="abby.png" alt="Abby Joseph">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
 
     <!-- About Section -->
@@ -94,56 +143,159 @@
     <!-- Skills Section -->
 
     <!-- Projects Section -->
-<section class="projects" id="projects">
-        <div class="project-card">
-            <div class="project-img"></div>
-            <h3>PROJECT NAME</h3>
-            <p>Skills</p>
-            <p class="arrow">&raquo;</p>
+    <section class="projects" id="projects">
+        <div class="project-slider-wrapper"> 
+            <div class="project-slider">
+
+                <!--slide 1-->
+                <div class="project-slide" data-slide="1">
+                <div class="project-card">
+                    <div class="project-img"></div>
+                    <h3>PROJECT NAME</h3>
+                    <p>Skills</p>
+                    <p class="arrow"><i class="fas fa-chevron-right"></i></p>
+                </div>
+                <div class="project-card">
+                    <div class="project-img"></div>
+                    <h3>PROJECT NAME</h3>
+                    <p>Skills</p>
+                    <p class="arrow"><i class="fas fa-chevron-right"></i></p>
+                </div>
+                <div class="project-card">
+                    <div class="project-img"></div>
+                    <h3>PROJECT NAME</h3>
+                    <p>Skills</p>
+                    <p class="arrow"><i class="fas fa-chevron-right"></i></p>
+                </div>
+                <div class="project-card">
+                    <div class="project-img"></div>
+                    <h3>PROJECT NAME</h3>
+                    <p>Skills</p>
+                    <p class="arrow"><i class="fas fa-chevron-right"></i></p>
+                </div>
+                </div>
+
+                <!--slide 2-->
+                <div class="project-slide" data-slide="2">
+                <div class="project-card">
+                    <div class="project-img"></div>
+                    <h3>PROJECT NAME 1</h3>
+                    <p>Skills</p>
+                    <p class="arrow"><i class="fas fa-chevron-right"></i></p>
+                </div>
+                <div class="project-card">
+                    <div class="project-img"></div>
+                    <h3>PROJECT NAME 2</h3>
+                    <p>Skills</p>
+                    <p class="arrow"><i class="fas fa-chevron-right"></i></p>
+                </div>
+                <div class="project-card">
+                    <div class="project-img"></div>
+                    <h3>PROJECT NAME 1</h3>
+                    <p>Skills</p>
+                    <p class="arrow"><i class="fas fa-chevron-right"></i></p>
+                </div>
+                <div class="project-card">
+                    <div class="project-img"></div>
+                    <h3>PROJECT NAME 2</h3>
+                    <p>Skills</p>
+                    <p class="arrow"><i class="fas fa-chevron-right"></i></p>
+                </div>
+                </div>
+            </div>
         </div>
-        <div class="project-card">
-            <div class="project-img"></div>
-            <h3>PROJECT NAME</h3>
-            <p>Skills</p>
-            <p class="arrow">&raquo;</p>
-        </div>
-        <div class="project-card">
-            <div class="project-img"></div>
-            <h3>PROJECT NAME</h3>
-            <p>Skills</p>
-            <p class="arrow">&raquo;</p>
-        </div>
-        <div class="project-card">
-            <div class="project-img"></div>
-            <h3>PROJECT NAME</h3>
-            <p>Skills</p>
-            <p class="arrow">&raquo;</p>
+        <!-- Dots -->
+        <div class="project-dots">
+            <span class="dot active" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
         </div>
     </section>
+
+    
     <!-- Resume Section -->
+    <section id="resume">
+        <div class="resume-wrapper">
+            <h2 class="section-title">resume section here...</h2>
+            <div class="timeline-container">
+
+                <!-- Work Experience (Left Column) -->
+                <div class="timeline-column">
+                    <h2 class="timeline-header">Work Experience</h2>
+                    <div class="timeline-section">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                        <h4>Software Engineer</h4>
+                        <p><strong>OpenAI</strong> | 2024 – Present</p>
+                        <p>Building and deploying large-scale AI services with a focus on performance, safety, and UX.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                        <h4>Backend Developer Intern</h4>
+                        <p><strong>Stripe</strong> | Summer 2023</p>
+                        <p>Created internal APIs, contributed to the billing microservice infrastructure, and improved test coverage.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                        <h4>Junior Developer</h4>
+                        <p><strong>Freelance</strong> | 2022 – 2023</p>
+                        <p>Built full-stack apps for small businesses using React, Node.js, and PostgreSQL.</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Education & Certifications (Right Column) -->
+                <div class="timeline-column education">
+                    <h2 class="timeline-header">Education</h2>
+                    <div class="timeline-section single">
+                    <div class="timeline-item">
+                        <div class="timeline-content small">
+                        <h4>Bachelor's Degree, Computer Science</h4>
+                        <p><strong>Brigham Young University-Idaho </strong> | July 2024</p>
+                        <p>Minor in Data Science</p>
+                        <br />
+                        <h5>Certificates</h5>
+                        <ul>
+                            <li>Machine Learning Fundamentals</li>
+                            <li>Computer Programming</li>
+                        </ul>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <!-- Blog Section -->
 
     <section class="blog-section" id="blog">
-        <div class="blog-layout">
-            <div class="blog-tile tall" style="grid-column: 1; grid-row: 1 / span 2;"></div>
-            <div class="blog-tile" style="grid-column: 2; grid-row: 1;"></div>
-            <div class="blog-tile" style="grid-column: 3; grid-row: 1;"></div>
+    <div class="blog-layout">
+        <!-- LEFT COLUMN -->
+        <div class="blog-tile tall slide-in-right" style="grid-column: 1; grid-row: 1 / span 2;"></div>
+        <div class="blog-tile fade-in" style="grid-column: 1; grid-row: 3;"></div>
 
-            <div class="blog-title">Research & Insights</div>
+        <!-- MIDDLE COLUMN -->
+        <div class="blog-tile slide-down" style="grid-column: 2; grid-row: 1;"></div>
+        <div class="blog-title" style="grid-column: 2; grid-row: 2;">Research & Insights</div>
+        <div class="blog-tile slide-up" style="grid-column: 2; grid-row: 3;"></div>
 
-            <div class="blog-tile" style="grid-column: 1; grid-row: 3;"></div>
-            <div class="blog-tile" style="grid-column: 2; grid-row: 3;"></div>
-            <div class="blog-tile tall" style="grid-column: 3; grid-row: 2 / span 2;"></div> 
-        </div>
-
+        <!-- RIGHT COLUMN -->
+        <div class="blog-tile fade-in" style="grid-column: 3; grid-row: 1;"></div>
+        <div class="blog-tile tall slide-in-left" style="grid-column: 3; grid-row: 2 / span 2;"></div>
+    </div>
     </section>
+
+
 
 
     <!-- Connect Section -->
     <section class="contact" id="contact">
         <div class="contact-info">
-            <h2>Let’s Connect</h2>
+            <h2>Let’s Connect !</h2>
             <p>I’m always open to new opportunities, collaborations, or just a friendly chat. Whether you have a project in mind, a question, or want to connect over shared interests.</p>
             <p>I’d love to hear from you!</p>
 
@@ -185,7 +337,7 @@
             <textarea id="message" name="message" rows="5" required></textarea>
 
             <button type="submit" class="submit-btn">
-            <span class="icon-circle"><i class="fas fa-arrow-right"></i></span>
+            <span class="icon-circle"><i class="fas fa-chevron-right"></i></span>
             Get In Touch
             </button>
         </form>
