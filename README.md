@@ -16,7 +16,7 @@ Live Site:
 [https://anrj2.github.io/janrPortfolio/](https://anrj2.github.io/janrPortfolio/)
 
 ### Contact
-Name: Abby Joseph
-Email: abbynadj@gmail.com  |  jos19004@byui.edu
-LinkedIn: Abby Nadie Joseph
-GitHub: anrj2
+###### Name: Abby Joseph
+###### Email: abbynadj@gmail.com  |  jos19004@byui.edu
+###### LinkedIn: Abby Nadie Joseph
+###### GitHub: anrj2
